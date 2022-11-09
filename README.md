@@ -1,11 +1,6 @@
 Estrutura de Controle
 IF
 
-<!DOCTYPE html>
-<html>
-<body>
-
-<?php
 $prova01=7;
 $prova02=5;
 $nota = ($prova01 + $prova02) / 2;
@@ -22,7 +17,3 @@ else
     $desempenho = "excelente";
 echo "seu desempenho foi $desempenho";
 
-?>
- 
-</body>
-</html>
