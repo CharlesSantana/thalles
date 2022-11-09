@@ -1,20 +1,25 @@
+<!DOCTYPE html>
 <html>
- <head>
-  <title>Curso PHP Progressivo</title>
- </head>
- <body>
-  <form action="home.php" method="get">
-  Sua idade:  <input type="number" name="age" /><br />
-  <input type="submit" name="submit" value="Testar" />
- </form> 
- <?php 
-  $idade = $_GET['age'];
-  
-  if($idade >= 18){
-   echo "Você já pode dirigir!";
-  }else{
-   echo "Você ainda não pode dirigir!";
-  }
- ?>
- </body>
+<body>
+
+<?php
+$prova01=7;
+$prova02=5;
+$nota = ($prova01 + $prova02) / 2;
+
+if (nota<3)
+    $desempenho = "pessimo";
+elseif($nota<5)
+    $desempenho = "ruim";
+elseif($nota<7)
+    $desempenho = "medio";
+elseif($nota<8)
+    $desempenho = "bom";
+else
+    $desempenho = "excelente";
+echo "seu desempenho foi $desempenho";
+
+?>
+ 
+</body>
 </html>
